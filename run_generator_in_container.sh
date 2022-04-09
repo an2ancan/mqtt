@@ -1,0 +1,1 @@
+docker exec -it mqtt_machine  "./ws/build/src/publisher/publisher"

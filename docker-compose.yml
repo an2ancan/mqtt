@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  sever:
+    image: docker.io/an2ancan/mqtt_eclipse:latest
+    network_mode: host
+    volumes:
+      - $PWD/ws/:/home/ws/:rw
+    logging:
+      driver: "none"
+    command: /bin/bash -c "mosquitto -v -c ws/mosquitto.conf"
+
+  subscriber:
+    image: docker.io/an2ancan/mqtt_eclipse:latest
+    container_name: mqtt_machine
+    depends_on:
+      - sever
+    volumes:
+      - $PWD/ws/:/home/ws/:rw
+    network_mode: host
+    command: bash -c "./ws/build/src/subscriber/subscriber"

@@ -1,0 +1,1 @@
+docker build -t an2ancan/mqtt_eclipse .

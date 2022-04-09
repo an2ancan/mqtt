@@ -1,0 +1,1 @@
+docker exec -it mqtt_machine env TERM=xterm-256color bash
