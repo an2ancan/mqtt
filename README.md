@@ -12,7 +12,7 @@ docker pull docker.io/an2ancan/mqtt_eclipse:latest
 ```
 I haven't added Workspace to image, so it is necessary to build it manually:
 ```bash
-./build_workspace.sh
+cd mqtt && ./build_workspace.sh
 ```
 ## Run
 It is required to open two terminals
