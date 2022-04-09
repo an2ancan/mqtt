@@ -38,6 +38,8 @@ It is based on the bicycle kinematic sheme and there is a possibility to control
 
 **a** - turn the model's steering left by 10 degrees
 
+to stop generator press **q**
+
 ## Results
 You can find two csv files tin the workspace:
 
