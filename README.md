@@ -2,22 +2,22 @@
 
 ## Build
 
-At first download repo:
+At first download the repo:
 ```bash
 git clone https://github.com/an2ancan/mqtt.git
 ```
-Then pull docker image:
+Then pull the docker image:
 ```bash
 docker pull docker.io/an2ancan/mqtt_eclipse:latest
 ```
-I haven't added Workspace to image, so it is necessary to build it manually:
+I haven't added my workspace to the image, so it is necessary to build it manually:
 ```bash
 cd mqtt && ./build_workspace.sh
 ```
 ## Run
 It is required to open two terminals
 
-In the **first terminal** start broker and processor:
+In the **first terminal** start a broker and the processor(subscriber):
 ```bash
 docker-compose up
 ```
@@ -32,7 +32,7 @@ It is based on the bicycle kinematic sheme and there is a possibility to control
 
 **w** - speed the model up by 0.5 m/s
 
-**s** - speed the model down by 0.5 m/s
+**s** - slow the model down by 0.5 m/s
 
 **d** - turn the model's steering right by 10 degrees
 
